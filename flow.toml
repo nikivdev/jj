@@ -1,0 +1,20 @@
+version = 1
+
+[[tasks]]
+name = "dev"
+command = "cargo run"
+description = "Run development build"
+shortcuts = ["d"]
+
+[[tasks]]
+name = "test"
+command = "cargo test"
+description = "Run tests"
+shortcuts = ["t"]
+
+[[tasks]]
+name = "build"
+command = "cargo build --release"
+description = "Build release"
+shortcuts = ["b"]
+

@@ -28,3 +28,9 @@ jj-trace-*.json
 
 # To make working on buck2 easier (#1997, #4413)
 /buck-out/
+.ai/internal/
+.rise/
+.ai/todos/*.bike
+.ai/review-log.jsonl
+.ai/web/
+.ai/state.json
