@@ -1,0 +1,40 @@
+version = 1
+
+[skills]
+sync_tasks = true
+install = ["jj-deep-workflow"]
+
+[[tasks]]
+name = "dev"
+command = "cargo run"
+description = "Run development build"
+shortcuts = ["d"]
+
+[[tasks]]
+name = "test"
+command = "cargo test"
+description = "Run tests"
+shortcuts = ["t"]
+
+[[tasks]]
+name = "build"
+command = "cargo build --release"
+description = "Build release"
+shortcuts = ["b"]
+
+[[tasks]]
+name = "install"
+command = "cargo build --release && mkdir -p ~/.local/bin && install -m 755 target/release/jj ~/.local/bin/jj"
+description = "Build and install jj to ~/.local/bin/jj"
+shortcuts = ["i"]
+
+[[tasks]]
+name = "deploy"
+command = "cargo build --release && mkdir -p ~/.local/bin && install -m 755 target/release/jj ~/.local/bin/jj"
+description = "Deploy release build to ~/.local/bin/jj"
+
+[[tasks]]
+name = "inspect-deploy"
+command = "cargo build -p jj-inspect --release && mkdir -p ~/.local/bin && install -m 755 target/release/jj-inspect ~/.local/bin/jj-inspect && ln -sf ~/.local/bin/jj-inspect ~/.local/bin/inspect"
+description = "Build and install jj-inspect to ~/.local/bin/jj-inspect"
+shortcuts = ["id"]

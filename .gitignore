@@ -28,3 +28,9 @@ jj-trace-*.json
 
 # To make working on buck2 easier (#1997, #4413)
 /buck-out/
+# private overlay
+.ai/
+.rise/
+.claude/
+.codex/
+.flox/

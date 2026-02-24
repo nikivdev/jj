@@ -1,0 +1,5 @@
+_build/
+target/
+dist/
+*.log
+.DS_Store
